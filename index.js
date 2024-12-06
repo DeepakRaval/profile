@@ -53,7 +53,7 @@ left.reveal('.cont-details', {delay: 200})
 const bottom = ScrollReveal({
     origin: 'bottom',
     distance: '80px',
-    duration: 3000,
+    duration: 2000,
     reset: true     
 });
 
