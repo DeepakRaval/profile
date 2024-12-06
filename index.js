@@ -27,7 +27,7 @@ var typingEffect = new Typed(".typedText",{
 
   sr.reveal('.front-end-set',{delay: 100})
   sr.reveal('.database-set',{delay: 300})
-
+  sr.reveal('.card', {delay: 200})
 
 
 
@@ -59,7 +59,7 @@ const bottom = ScrollReveal({
 
 bottom.reveal('.back-end-set', {delay: 200})
 bottom.reveal('.projects', {delay: 200})
-bottom.reveal('.card', {delay: 200})
+// bottom.reveal('.card', {delay: 200})
 
 
 
