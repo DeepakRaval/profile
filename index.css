@@ -11,13 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav-items{
+.nav-items {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
 }
-
 
 .navbar {
   background-color: rgb(47, 84, 99);
@@ -41,7 +40,6 @@ html {
   align-items: center;
   justify-content: center;
   align-items: center;
-
 
   ul {
     list-style: none;
@@ -88,7 +86,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-left: 130px;
 
     .title {
       background-color: #d4980b;
@@ -222,23 +219,20 @@ html {
   padding: 10px 100px 10px 100px;
   text-align: center;
   margin-top: 30px;
-
 }
-  .carousel {
-    .carousel-inner {
-      .carousel-item {
-        
-        padding: 0 100px 0 100px;
-        .work {
-          text-align: center;
-          height: 300px;
-          width: 100%;
-          padding: 30px;
-        }
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      padding: 0 100px 0 100px;
+      .work {
+        text-align: center;
+        height: 300px;
+        width: 100%;
+        padding: 30px;
       }
     }
   }
-
+}
 
 #Contacts-section {
   margin-top: 30px;
@@ -301,7 +295,7 @@ html {
         }
 
         .text-area {
-          width: 360px;
+          width: 100%;
           height: 188px;
           border: navy solid 1px;
           padding: 5px;
@@ -330,8 +324,7 @@ html {
   }
 }
 
-
-.footer{
+.footer {
   /* background-color: rgba(64, 63, 63, 0.522); */
   margin: 20px 0 0 0;
   padding: 20px 0 20px 0;
@@ -340,17 +333,17 @@ html {
   align-items: center;
   border-top: navy solid 1px;
 
-  .card{
+  .card {
     width: fit-content;
     text-align: center;
     border: none;
-    
-    .batches{
+
+    .batches {
       display: flex;
       justify-content: center;
       gap: 20px;
 
-      a{
+      a {
         border: black solid 1px;
         padding: 3px;
         height: 30px;
@@ -359,5 +352,96 @@ html {
       }
     }
   }
+}
 
+/* Styles for Mobile */
+@media (max-width: 768px) {
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding-top: 100px;
+    height: 65vh;
+    .left-side {
+      width: 95%;
+      margin-top: 5px;
+      justify-content: center;
+      .title {
+        margin-left: 33%;
+      }
+      .title-profile {
+        font-size: 2rem;
+      }
+
+      .btns {
+        margin-top: 5px;
+      }
+    }
+
+    .right-side {
+      width: 95%;
+    }
+  }
+
+  #About-section {
+    .as-right {
+      width: 95%;
+      padding: 36px 2px;
+      text-align: justify;
+    }
+  }
+
+  #Skills-section {
+    .skill-sets {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  #Projects-section {
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    margin-top: 15px;
+    height: 35vh;
+  }
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        padding: 0 5px 0 5px;
+        .work {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #Contacts-section {
+    margin-top: 20px;
+    .contacts {
+      padding: 30px 0 30px 0;
+      flex-direction: column;
+
+      .cont-details{
+        width: 95%;
+      }
+
+      .contact-form{
+        width: 95%;
+        padding: 0 10px 0 10px;
+
+      }
+    }
+  }
+}
+
+/* Styles for Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
 }
