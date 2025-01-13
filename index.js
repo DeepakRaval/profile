@@ -1,10 +1,11 @@
 
 var typingEffect = new Typed(".typedText",{
-    strings : ["Java Developer","React Developer","SpringBoot Dev"],
-    loop : true,
-    typeSpeed : 100, 
-    backSpeed : 80,
-    backDelay : 2000
+   // strings : ["Java Developer","React Developer","SpringBoot Dev"],
+   strings : ["Core Java", "Java 8", "Spring Boot", "Microservices", "Kafka", "Design Patterns", "SQL", "HTML, CSS, JS", "React JS"],
+   loop : true,
+    typeSpeed : 80, 
+    backSpeed : 60,
+    backDelay : 1000
  })
 
 

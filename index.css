@@ -90,13 +90,19 @@ html {
     .title {
       background-color: #d4980b;
       color: white;
-      padding: 5px;
+      font-weight: bold;
+      font-size: 2rem;
+      padding: 5px 10px;
       width: fit-content;
       border-radius: 15px;
     }
 
     .iam {
       color: black;
+      margin-top: 15px;
+      span{
+        font-weight: bold;
+      }
     }
     .title-profile {
       font-size: 3rem;
@@ -195,6 +201,11 @@ html {
   .set {
     border: gray solid 1px;
     padding: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .set:hover{
+    background-color: rgb(215, 231, 245);
   }
 
   .set-box {
@@ -216,9 +227,74 @@ html {
 
 #Projects-section {
   /* height: 50vh; */
-  padding: 10px 100px 10px 100px;
+  padding: 10px 0px 10px 0px;
   text-align: center;
   margin-top: 30px;
+  h1 {
+    color: rgb(4, 87, 120);
+    font-size: 2.5rem;
+  }
+  .projects{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    
+    .experiance{
+      padding: 20px;
+      transition: all 0.2s ease-in-out;
+      border: black 1px solid;
+
+      .project-header{
+        display: flex;
+        .project-image{
+          width: 10%;
+          img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+        .project-info{
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+          padding: 0 0 0 30px;
+
+          .company-name{
+            color: navy;
+            font-size: 2rem;
+            font-weight: bolder;
+          }
+
+          .project-name{
+            font-weight: bold;
+          }
+        }
+      }
+
+      .project-decs{
+        margin-top: 10px;
+        p{
+          text-align: left;
+        }
+
+        ul{
+          text-align: left;
+        }
+      }
+
+    }
+
+    .experiance:hover{
+      border: navy 4px solid;
+      box-shadow: 2px;
+      border-radius: 12px;
+      
+    }
+  }
 }
 .carousel {
   .carousel-inner {
